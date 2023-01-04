@@ -7,7 +7,7 @@ class LoggerTest {
   private static final Logger LOGGER = LoggerFactory.getLogger(LoggerTest.class);
 
   @Test
-  void name() {
+  void info() {
     MDC.put("foo", "bar");
     LOGGER.info("baz {}", "qux");
   }
