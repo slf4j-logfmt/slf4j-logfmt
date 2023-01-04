@@ -29,3 +29,10 @@ Output:
 ```
 time=2023-01-04T11:18:43-08:00 level=info thread="main" msg="baz qux" foo="bar"
 ```
+
+## Configuration
+
+```bash
+LOG_LEVEL=info ;# debug,info,warn,error
+LOG_QUEUE_SIZE=256 ;# > 0, use 1 for nearly sync logging
+``
