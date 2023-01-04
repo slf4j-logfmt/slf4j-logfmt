@@ -11,9 +11,10 @@ class LoggerTest {
     MDC.put("foo", "bar");
     LOGGER.info("baz {}", "qux");
   }
+
   @Test
   void flood() {
-    for (int i=0;i<1_000_000;i++) {
+    for (int i = 0; i < 1_000_000; i++) {
       LOGGER.info("baz {}", "qux");
     }
   }
