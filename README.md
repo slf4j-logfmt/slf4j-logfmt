@@ -8,8 +8,8 @@ Benefits:
 
 * Fast - simple formatting.
 * Concise - 30% smaller than JSON.
-* Simple.
-* Structured and therefore parseable.
+* Simple - human readable.
+* Structured - machine readable.
 
 ```java
 class LoggerTest {
@@ -35,4 +35,4 @@ time=2023-01-04T11:18:43-08:00 level=info thread="main" msg="baz qux" foo="bar"
 ```bash
 LOG_LEVEL=info ;# debug,info,warn,error
 LOG_QUEUE_SIZE=256 ;# > 0, use 1 for nearly sync logging
-``
+```
