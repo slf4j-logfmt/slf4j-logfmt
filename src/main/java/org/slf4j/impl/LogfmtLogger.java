@@ -142,12 +142,6 @@ public final class LogfmtLogger implements Logger {
     out.append(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX").format(new Date()));
     out.append(" level=");
     out.append(level.toString().toLowerCase());
-    out.append(" thread=\"");
-    out.append(Thread.currentThread().getName().replace("\"", "\\\""));
-    out.append("\"");
-    out.append(" logger=\"");
-    out.append(name);
-    out.append("\"");
     out.append(" msg=\"");
     out.append(MessageFormatter.arrayFormat(msg, args).getMessage().replace("\"", "\\\""));
     out.append("\"");

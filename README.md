@@ -27,7 +27,7 @@ class LoggerTest {
 Output:
 
 ```
-time=2023-01-04T11:18:43-08:00 level=info thread="main" msg="baz qux" foo="bar"
+time=2023-01-04T11:18:43-08:00 level=info msg="baz qux" foo="bar"
 ```
 
 ## Configuration
